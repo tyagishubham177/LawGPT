@@ -30,7 +30,7 @@
       "eject": "react-scripts eject",
       "dev": "next dev",
       "lint": "next lint",
-      "scrape": "tsx scripts/scrape.ts",
+      "format-data": "tsx scripts/data-formatter.ts",
       "embed": "tsx scripts/embed.ts"
     },
     "devDependencies": {
