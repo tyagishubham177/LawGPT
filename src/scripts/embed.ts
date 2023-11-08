@@ -2,13 +2,13 @@ import { loadEnvConfig } from "@next/env";
 import { createClient } from "@supabase/supabase-js";
 import fs from "fs";
 import OpenAI from "openai";
-import { PGResource } from "../types";
+import { PGResource } from "@/types";
 
 loadEnvConfig("");
 
 const generateEmbeddings = async (resources: PGResource[]) => {
-	console.log("process.env :>> ", process.env.OPEN_API_KEY);
-	const openai = new OpenAI({ apiKey: process.env.OPEN_API_KEY });
+	console.log("process.env :>> ", process.env.OPENAI_API_KEY);
+	const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 	const supabase = createClient(
 		process.env.NEXT_PUBLIC_SUPABASE_URL!,
