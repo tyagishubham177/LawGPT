@@ -11,6 +11,7 @@ const handler = async (req: Request): Promise<Response> => {
 			apiKey: string;
 			matches: number;
 		};
+		console.log("apiKey :>> ", apiKey);
 
 		const input = query.replace(/\n/g, " ");
 
