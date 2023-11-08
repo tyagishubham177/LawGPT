@@ -27,7 +27,7 @@ export const OpenAIStream = async (prompt: string, apiKey: string) => {
 				{
 					role: "system",
 					content:
-						"You are a helpful legal assistant. Your task is to advice the users about the Indian laws. Be as precise as possible.",
+						"You are a helpful legal assistant. Your task is to advice the users about the Indian laws. Be as precise as possible. DO NOT ANSWER FROM PERSONAL KNOWLEDGE, ONLY USE THE GIVEN DATA SET",
 				},
 				{
 					role: "user",

@@ -203,10 +203,10 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Paul Graham GPT</title>
+				<title>LawGPT</title>
 				<meta
 					name="description"
-					content={`AI-powered search and chat for Paul Graham's essays.`}
+					content={`AI-powered search and chat for Indian laws.`}
 				/>
 				<meta
 					name="viewport"

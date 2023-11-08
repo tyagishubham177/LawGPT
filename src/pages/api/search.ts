@@ -11,8 +11,6 @@ const handler = async (req: Request): Promise<Response> => {
 			apiKey: string;
 			matches: number;
 		};
-		console.log("apiKey :>> ", apiKey);
-
 		const input = query.replace(/\n/g, " ");
 
 		const res = await fetch("https://api.openai.com/v1/embeddings", {
@@ -34,7 +32,7 @@ const handler = async (req: Request): Promise<Response> => {
 			"pg_search_resources",
 			{
 				query_embedding: embedding,
-				similarity_threshold: 0.01,
+				similarity_threshold: 0.7,
 				match_count: matches,
 			}
 		);
